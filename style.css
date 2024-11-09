@@ -1,0 +1,567 @@
+@import url(https://db.onlinewebfonts.com/c/e31cb567aed0e12aaf0a5d265b24d49b?family=GothamSSm-Light);
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "GothamSSm-Light";
+    src: url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.eot");
+    src: url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/e31cb567aed0e12aaf0a5d265b24d49b.svg#GothamSSm-Light")format("svg");
+}
+
+/* box-sizing: border-box; */
+
+
+/* +++++++++++++++++++++++++++++++++++++ First Box +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.firstBox {
+    background-color: white;
+    height: 85px;
+    width: 100%;
+    display: flex;
+}
+
+.firstBox .firstCol {
+    width: 30%;
+    height: 100px;
+    /* background-color: antiquewhite; */
+
+}
+
+.firstBox .firstCol .box {
+    float: right;
+    /* width: 30%; */
+    height: 85px;
+    /* background-color: aquamarine; */
+    margin-right: 20%;
+    /* margin-top: 20px; */
+}
+
+.firstBox .firstCol .box img {
+    width: 100%;
+    height: 85px;
+    background-color: aqua;
+}
+
+.firstBox .secondCol {
+    /* margin: auto; */
+    height: 65px;
+    /* background-color: aquamarine; */
+    width: 70%;
+}
+
+.firstBox .secondCol .allitem {
+    margin-right: 10%;
+    float: right;
+    position: relative;
+    margin-top: 10px;
+}
+
+.firstBox .secondCol .allitem img {
+    height: 55px;
+    margin-top: 10px;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++ Second Box +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.secondBox {
+    width: 100%;
+    height: 100px;
+    /* font-family: sans-serif; */
+    display: flex;
+    /* align-items: center; */
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.secondBox .logo img {
+    /* width: 50%; */
+    display: none;
+    height: 75px;
+    margin-left: 70px;
+}
+.secondBox .allNav{
+    /* background-color: #30537a; */
+    width: 70%;
+    margin-left: -12px;
+   
+}
+.secondBox .allNav ul {
+    /* background-color: aqua; */
+    display: flex;
+    /* width: 90%; */
+}
+
+.secondBox .allNav ul li {
+    list-style: none;
+    color: white;
+    padding: 0% 45px 0% 0%;
+}
+
+.secondBox .allNav ul li {
+    text-decoration: none;
+    color: #575757;
+    font-weight: 400;
+    line-height: 100px;
+    transition: all 0.4s ease-in-out;
+}
+
+.secondBox .allNav ul li ul li {
+    line-height: normal;
+}
+
+.secondBox .allNav ul {
+    color: white;
+
+}
+
+.secondBox .allNav ul li {
+    list-style: none;
+    margin-left: -5px;
+}
+
+.secondBox .allNav ul li a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 13px;
+    color: black;
+}
+
+.secondBox .allNav ul li:hover {
+    color: blue;
+
+}
+
+.mainDrop-1,
+.mainDrop-2,
+.mainDrop-3,
+.mainDrop-4 {
+    position: relative;
+}
+
+/* +++++++++++++++++++++++++++++++++ Downdrop One +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.downdropOnen,
+.downdropTwon,
+.downdropThreen,
+.downdropFourn {
+    color: white;
+    display: none;
+    position: absolute;
+    left: -80px;
+    top: 120%;
+    padding: 10px;
+    /* border-radius: 10px; */
+
+}
+
+.secondBox .allNav ul li:hover .downdropOnen,
+.secondBox .allNav ul li:hover .downdropTwon,
+.secondBox .allNav ul li:hover .downdropThreen,
+.secondBox .allNav ul li:hover .downdropFourn {
+    background-color: white;
+    border: 1px solid rgb(183, 243, 243);
+    box-shadow: 0 0 2px #002b5f;
+    transition: all 0.4s ease;
+    width: 850px;
+    display: block;
+    top: 80%;
+
+}
+
+.secondBox .allNav ul li .downdropTwon ul,
+.secondBox .allNav ul li .downdropOnen ul,
+.secondBox .allNav ul li .downdropThreen ul,
+.secondBox .allNav ul li .downdropFourn ul {
+    max-width: 260px;
+    overflow-y: scroll;
+    z-index: 10;
+    display: none;
+    /* transition: ; */
+    color: white;
+    /* margin-top: 10px; */
+}
+
+.secondBox .allNav ul li:hover .downdropTwon ul,
+.secondBox .allNav ul li:hover .downdropOnen ul,
+.secondBox .allNav ul li:hover .downdropThreen ul,
+.secondBox .allNav ul li:hover .downdropFourn ul {
+    display: block;
+    margin: 0%;
+}
+
+
+.secondBox .allNav ul li:hover .downdropTwon ul li,
+.secondBox .allNav ul li:hover .downdropOnen ul li,
+.secondBox .allNav ul li:hover .downdropThreen ul li,
+.secondBox .allNav ul li:hover .downdropFourn ul li {
+    padding: 11px 15px;
+
+}
+
+.secondBox .allNav ul li:hover .downdropTwon ul li,
+.secondBox .allNav ul li:hover .downdropOnen ul li,
+.secondBox .allNav ul li:hover .downdropThreen ul li,
+.secondBox .allNav ul li:hover .downdropFourn ul li {
+    overflow-y: visible;
+}
+
+/* +++++++++++++++++++++++++++++++++ Downdrop Two +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.downdropTwo {
+    display: none;
+
+
+}
+
+.downdropTwo ul {
+    overflow-y: unset !important;
+}
+
+.hover-Two:hover .downdropTwo {
+    position: absolute;
+    top: 10px;
+    display: block;
+    left: 230px;
+    color: black;
+    background: transparent;
+    z-index: 11;
+    padding-left: 50px;
+
+}
+
+.downdropTwo ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* +++++++++++++++++++++++++++++++++ Downdrop Three+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.downdropThree {
+    display: none;
+}
+
+.hoverThree:hover .downdropThree {
+    background-color: rgb(238, 238, 238);
+    color: white;
+    /* overflow-y: scroll; */
+    /* width: 40%;
+    height: 260px; */
+    display: block;
+    position: absolute;
+}
+
+.hoverThree:hover .downdropThree ul {
+    display: block;
+    margin: 0%;
+}
+
+.hoverThree:hover .downdropThree ul li {
+    margin: 10px;
+}
+
+/* +++++++++++++++++++++++++++++++++ Downdrop Four +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.downdropFour {
+    display: none;
+    transition-delay: 2s;
+}
+
+.hoverFour:hover .dfour {
+    background-color: rgb(238, 238, 238);
+    color: white;
+    transition: all 4s ease;
+    /* width: 8; */
+    /* height: 260px; */
+    display: block;
+    /* overflow-y: scroll; */
+    position: absolute;
+}
+
+.hoverFour:hover .dfour ul {
+    display: block;
+    margin: 0%;
+}
+
+.hoverFour:hover .dfour ul li {
+    margin: 10px;
+}
+
+
+.contain {
+    height: 300px !important;
+    width: 200px !important;
+    /* left: 00px; */
+    /* background-color: aqua !important; */
+}
+
+
+.dtwo {
+    width: 830px !important;
+    /* left: 100px; */
+}
+
+.dfour {
+    width: 850px !important;
+    left: -300px;
+    height: 400px;
+}
+
+
+/* +++++++++++++++ Nested menu ++++++++++++++++++++++++++++++++ */
+
+.productOne:hover .imgDivOne {
+    /* position: relative; */
+    display: block;
+}
+
+.imgDivOne {
+    width: 100%;
+    height: 200px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    z-index: 14;
+    left: 300px;
+}
+
+.imgSize {
+    width: 250px;
+    background-color: #30537a;
+    left: 300px;
+    height: 230px;
+}
+
+.imgSizetwo {
+    left: 180px;
+    top: 10px;
+    width: 250px;
+    height: 230px;
+}
+
+.imgSizeThree {
+    left: 230px;
+    top: 10px;
+    width: 250px;
+    height: 230px;
+}
+
+.imgSizefour img {
+    left: 230px;
+    top: 80px;
+    width: 250px;
+    height: 250px;
+    background-color: #30537a;
+    margin-top: 30px;
+}
+
+.mobileallNav {
+    display: none;
+}
+
+/* +++++++++++++++++++++ Mobile View Media Queries +++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (min-device-width: 100px) and (max-device-width: 988px) {
+    .firstBox {
+        display: none;
+    }
+
+    .allNav {
+        display: none;
+    }
+
+
+    .secondBox .logo img {
+        height: 65px;
+        display: block;
+        margin-top: 15px;
+        margin-left: -28px;
+    }
+
+    .mobileviewIcon {
+        margin-top: 25px;
+        width: 20%;
+        line-height: 50px;
+    }
+
+    .mobileviewIcon img {
+        height: 30px;
+        color: #30537a;
+        background-color: transparent;
+        padding-left: 30px;
+        width: 80px;
+
+    }
+
+    .mobileallNav {
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+
+    .mobileallNav .mainallNav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .mobileallNav .mainallNav ul li {
+        list-style: none;
+    }
+
+    .mobileallNav .mainallNav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .secondBox {
+        justify-content: space-between;
+        padding: 0 50px;
+        background-color: white;
+    }
+
+    .mobileallNav .spanDiv {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #002b5f;
+    }
+
+    .mobileallNav .spanDiv :first-child {
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        /* width: 10%; */
+        color: white;
+        font-size: 13px ;
+        /* height: 30px; */
+        /* background-color: #f5f5f5; */
+
+
+    }
+
+    .spanDiv img {
+        /* margin-left: 250px; */
+        float: right;
+        margin: 10px 20px;
+        padding: 5px 10px;
+        background-color: aliceblue;
+        /* width: 10%; */
+        /* height: 30px; */
+    }
+
+    .mainallNav ul li i {
+        float: right;
+        margin-right: 20px;
+        width: 10%;
+        /* color:rgb(124, 124, 124); */
+        height: 20px;
+        /* background-color: aqua; */
+        /* border-left: 1px solid rgb(173, 173, 173); */
+        /* padding: 5px 5px; */
+        padding-left: 15px;
+    }
+
+    .mobileresponsDiv-1 {
+        display: none;
+    }
+
+    .mainDrop-1:hover .mobileresponsDiv-1 {
+        display: block;
+        /* background-color: aqua; */
+
+    }
+
+    .mobileresponsDiv-2 {
+        display: none;
+    }
+
+    .mainDrop-2:hover .mobileresponsDiv-2 {
+        display: block;
+        /* background-color: aqua; */
+
+    }
+
+    .searchInputDIv .btn {
+        display: none;
+    }
+
+    .search-BarDiv {
+        display: none;
+    }
+
+    .searchInputDIv i {
+        display: none;
+    }
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++ Desktop Media Queries +++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (min-device-width: 988px) and (max-device-width: 3000px) {
+
+    .mobileviewIcon {
+        display: none;
+    }
+
+    .spanDiv img {
+        display: none;
+    }
+
+    .mainallNav {
+        display: none;
+    }
+
+    .mobileallNav .spanDiv {
+        display: none;
+    }
+
+    .searchInputDIv {
+        display: flex;
+        align-items: center;
+        /* background-color: cornflowerblue; */
+    }
+
+    .searchInputDIv i {
+        background-color: aliceblue;
+        margin-right: 20px;
+    }
+
+    .search-BarDiv {
+        /* background-color: springgreen; */
+        margin-right: 10px;
+        display: none;
+
+
+    }
+
+    .search-BarDiv input {
+        padding: 7px 20px;
+        border-radius: 15px;
+        border: none;
+        /* box-shadow: 4px 14px 4px 1px solid rgb(176, 123, 230); */
+        outline: none;
+    }
+
+
+    .searchInputDIv .searchInput .btn {
+        background-color: #002c5c;
+        margin-right: 76px;
+        color: white;
+        font-weight: 600;
+        padding: 10px 23px;
+        border-radius: 5px;
+        /* display: none; */
+
+    }
+
+
+}
